@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.shubhamr.health.LoginSuccess">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/hearbeat"
+            android:layout_alignStart="@+id/name"
+            android:layout_marginBottom="41dp"
+            android:layout_marginStart="79dp"
+            android:text="Yes"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/emer"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="9dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/hearbeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name"
+            android:layout_alignStart="@+id/aadhaar"
+            android:layout_marginBottom="46dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/emer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/aadhaar"
+            android:layout_marginStart="178dp"
+            android:layout_marginTop="40dp"
+            android:text="Y"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/aadhaar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/temp"
+            android:layout_marginTop="11dp"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/panic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="97dp"
+        android:background="#ff0000"
+        android:text="Panic"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+
+</RelativeLayout>
